@@ -1,0 +1,95 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header__conteiner {
+  @include flex(flex, center, null);
+}
+
+.header__logo {
+  @include font(null, 26px, 1.1923, 0.03em);
+  color: var(--accent-color);
+}
+
+/*---------навігація сайту------------*/
+
+.menu {
+  display: none;
+  gap: 50px;
+  margin-right: auto;
+}
+
+.navigation {
+  margin-right: auto;
+}
+/* .header-nav .item {
+  background-color: rgb(7, 250, 19);
+} */
+/* .header-nav .item:not( :last-child) {
+  margin-right: 50px;
+} */
+/* .header-nav .item:last-child {
+  margin-right: 0;
+} */
+
+/* .header-nav .item + .item {
+  margin-left: 50px;
+} */
+.menu__link {
+  color: var(--title-text-color);
+  @include font(500, null, 1.1428, 0.02em);
+  position: relative;
+  padding-bottom: 33px;
+  transition: color var(--time) var(--timing-function);
+  &:hover, 
+  &:focus {
+  color: var(--accent-color);}
+}
+
+.current {
+  color: var(--accent-color);
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+/*-----авторизація навігації---------*/
+.auth-nav {
+  @include flex(none, null, null);
+  @include font(null, null, 1.1428, 0.02em);
+  text-decoration: none;
+}
+
+.auth-nav .auth-nav__item + .auth-nav__item {
+  margin-left: 50px;
+}
+
+.auth-nav__item .auth-nav__link {
+  @include flex(flex, center, null);
+}
+
+.auth-nav__link {
+  font-weight: 500;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  transition: color var(--time) var(--timing-function);
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+  }
+}
+
+.auth-nav__icon-smartphone,
+.auth-nav__icon-envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
