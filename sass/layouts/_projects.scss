@@ -1,12 +1,12 @@
 .projects-list {
   @include flex(flex, null, null);
-  @include flex(flex, null, null);
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .projects-list__projects-box > .projects-list__projects-link{
+  max-width: 100%;
   display: block;
   &:hover,
   &:focus {

@@ -23,16 +23,14 @@
     <link rel="stylesheet" href="./css/styles.css" >
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
-  <!--Тіло документу-->
+
   <body>
-    <!--Шапка сайту-->
     <header class="header">
       <div class="container header__conteiner">
         <a class="logo link" href="/index.html" lang="en"
           ><span class="header__logo">Web</span>Studio</a
         >
         <nav class="navigation">
-          
           <ul class="menu list">
             <li class="menu__item">
               <a class="menu__link list current" href="./index.html"
@@ -67,12 +65,73 @@
             >
           </li>
         </ul>
+        <!-- <nav class="header-menu"> -->
+          <button type="button" class="menu-open" >
+            <svg class="menu-open__header-menu" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+        <!-- </nav> -->
+      </div>
+
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <button class="menu-close" type="button">
+            <svg class="header-menu-nav__header-menu" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a class="menu-list__link list" href="./index.html"
+                >Студія</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link list" href="./portfolio.html"
+                >Портфоліо</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link list" href="#">Контакти</a>
+            </li>
+          </ul>
+          <a class="mob-phone__link list" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+          <a class="mob-mailto__link list" href="mailto:info@devstudio.com">
+            info@devstudio.com</a>
+          <ul class="mob-soc list">
+            <li class="mob-soc_item">
+              <a href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc_link list">Instagram</a>
+            </li>
+            <li class="mob-soc_item">
+              <a href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc_link list">Twitter</a>
+            </li>
+            <li class="mob-soc_item">
+              <a href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc_link list">Facebook</a>
+            </li>
+            <li class="mob-soc_item">
+              <a href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mob-soc_link list">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        
       </div>
     </header>
-    <!--Унікальний матеріал сторінки-->
+
     <main>
-      <section class="hero">
-        <div class="container hero-content">
+      <section class="section hero">
+        <div class="container">
           <h1 class="container__hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn" type="button" data-modal-open>
             Замовити послугу
@@ -80,53 +139,53 @@
         </div>
       </section>
 
-      <section class="section section-feauters">
+      <section class="section">
         <div class="container">
           <h2 hidden>Особливості</h2>
-          <ul class="list-ul list">
-            <li class="list-ul__feauters-li">
+          <ul class="list-feauters list">
+            <li class="list-feauters__feauters-li">
               <div class="features-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-                <h3 class="list-ul__features">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="list-ul__features-list">
-                  Ідейні міркування, і навіть початок повсякденної роботи з
-                  формування позиції.
-                </p>
+              <h3 class="list-feauters__features">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="list-feauters__features-list">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
             </li>
-            <li class="list-ul__feauters-li">
+            <li class="list-feauters__feauters-li">
               <div class="features-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="list-ul__features">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="list-ul__features-list">
+              <h3 class="list-feauters__features">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="list-feauters__features-list">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="list-ul__feauters-li">
+            <li class="list-feauters__feauters-li">
               <div class="features-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="list-ul__features">ПЛАНУВАННЯ</h3>
-              <p class="list-ul__features-list">
+              <h3 class="list-feauters__features">ПЛАНУВАННЯ</h3>
+              <p class="list-feauters__features-list">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="list-ul__feauters-li">
+            <li class="list-feauters__feauters-li">
               <div class="features-icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="list-ul__features">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="list-ul__features-list">
+              <h3 class="list-feauters__features">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="list-feauters__features-list">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -141,6 +200,7 @@
           <ul class="list-li list">
               <li class="list-li__title-box">
                 <img
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                   src="./images/img1.jpg"
                   alt="пише код"
                   width="370"
@@ -152,6 +212,7 @@
               </li>
               <li class="list-li__title-box">
                 <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                   src="./images/img2.jpg"
                   alt="працює за комп'ютером"
                   width="370"
@@ -163,6 +224,7 @@
               </li>
               <li class="list-li__title-box">
                 <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                   src="./images/img3.jpg"
                   alt="вибирає колір"
                   width="370"
@@ -179,14 +241,22 @@
       <section class="section section-team">
         <div class="container">
           <h2 class="container__title-team">Наша команда</h2>
-          <ul class="list-li list">
-            <li class="list-li__card">
-              <img
-                src="./images/photo1.jpg"
+          <ul class="list-team list">
+            <li class="list-team__card">
+              <picture class="list-team__photo">
+                <source srcset="./images/photo1.jpg 1x, ./images/photo1desk-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                <source srcset="./images/photo1tabl.jpg 1x, ./images/photo1tabl-2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                <source srcset="./images/photo1mob.jpg 1x, ./images/photo1mob2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                <img 
+                src="./images/photo1mob.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
+                width="450"
               >
+              </picture>
+              
               <div class="card-description">
                 <h3 class="card-description__team-list">Ігор Дем'яненко</h3>
                 <p class="card-description__list-p" lang="en">Product Designer</p>
@@ -223,13 +293,21 @@
               </div>
             </li>
 
-            <li class="list-li__card">
-              <img
-                src="./images/photo2.jpg"
+            <li class="list-team__card">
+              <picture class="list-team__photo">
+                <source srcset="./images/photo2.jpg 1x, ./images/photo2desk-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                <source srcset="./images/photo2tabl.jpg 1x, ./images/photo2tabl-2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                <source srcset="./images/photo2mob.jpg 1x, ./images/photo2mob2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                <img
+                src="./images/photo2mob.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
-                height="260"
+                width="450"
               >
+              </picture>
+              
               <div class="card-description">
                 <h3 class="card-description__team-list">Ольга Рєпіна</h3>
                 <p class="card-description__list-p" lang="en">Frontend Developer</p>
@@ -266,13 +344,20 @@
               </div>
             </li>
 
-            <li class="list-li__card">
-              <img
-                src="./images/photo3.jpg"
+            <li class="list-team__card">
+              <picture class="list-team__photo">
+                <source srcset="./images/photo3.jpg 1x, ./images/photo3desk-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                <source srcset="./images/photo3tabl.jpg 1x, ./images/photo3tabl-2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                <source srcset="./images/photo3mob.jpg 1x, ./images/photo3mob2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                <img
+                src="./images/photo3mob.jpg"
                 alt="Микола Тарасов"
-                width="270"
-                height="260"
+                width="450"
               >
+              </picture>
               <div class="card-description">
                 <h3 class="card-description__team-list">Микола Тарасов</h3>
                 <p class="card-description__list-p" lang="en">Marketing</p>
@@ -309,13 +394,21 @@
               </div>
             </li>
 
-            <li class="list-li__card">
-              <img
-                src="./images/photo4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
+            <li class="list-team__card">
+              <picture class="list-team__photo">
+                <source srcset="./images/photo4.jpg 1x, ./images/photo4desk-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                <source srcset="./images/photo4tabl.jpg 1x, ./images/photo4tabl-2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                <source srcset="./images/photo4mob.jpg 1x, ./images/photo4mob2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                <img
+                src="./images/photo4mob.jpg"
+                alt="Микола Тарасов"
+                width="450"
               >
+              </picture>
+
               <div class="card-description">
                 <h3 class="card-description__team-list">Михайло Єрмаков</h3>
                 <p class="card-description__list-p" lang="en">UI Designer</p>
@@ -353,8 +446,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <section class="section">
+      </section> 
+
+      <section class="section section-clients">
         <div class="container">
           <h2 class="section-clients__title">Постійні клієнти</h2>
           <ul class="clients-list list">
@@ -404,7 +498,7 @@
         </div>
       </section>
     </main>
-    <!-- Підвал сторінки -->
+
     <footer class="footer">
       <div class="container-footer container">
         <div class="cover-address">
@@ -436,6 +530,7 @@
             </ul>
           </address>
         </div>
+
         <div class="social-block">
           <strong class="social-block__social-footer">приєднуйтесь</strong>
           <ul class="social-footer-list list">
@@ -469,6 +564,7 @@
             </li>
           </ul>
         </div>
+
         <div class="social-input">
           <strong class="social-input__social-footer">Підпишіться на розсилку</strong>
           <form class="footer-form input-flex">
@@ -560,5 +656,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
+    
 </html>

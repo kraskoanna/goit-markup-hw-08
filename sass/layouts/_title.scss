@@ -1,14 +1,26 @@
+.section-title {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
+}
+
 .container__title {
-  margin-bottom: 50px;
+  @include desktop {
+    margin-bottom: 50px;
   @include font(null, 36px, 1.1666, null);
   color: var(--title-text-color);
   text-align: center;
+  }
 }
 
 .list-li {
-  @include flex(flex, null, center);
+  @include desktop {
+    @include flex(flex, null, center);
   flex-wrap: wrap;
   gap: 30px;
+  }
+  
 }
 
 .list-li__title-box {

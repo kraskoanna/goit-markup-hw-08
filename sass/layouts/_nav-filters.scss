@@ -10,12 +10,14 @@
   text-align: center;
   color: var(--title-text-color);
   @include flex(flex, center, center);
+  flex-wrap: wrap;
   margin: auto;
   margin-bottom: 50px;
 }
 
 .btn-filter__list-btn:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .btn-filter__btn-active {

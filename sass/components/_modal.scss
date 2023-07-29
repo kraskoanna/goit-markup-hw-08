@@ -13,9 +13,12 @@
   transition: opacity 250ms linear, visibility 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal {
-  width: 528px;
-  min-height: 518px;
+  width: 100%;
+  // height: 100%;
+    // width: 528px;
+  min-height: 581px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,10 +30,20 @@
   transition: transform 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+
 .modal-close {
   position: absolute;
   width: 30px;
@@ -49,7 +62,6 @@
   }
 }
 
-
 .modal-title {
   @include font(700, 20px, 1.15, null);
   text-align: center;
@@ -61,6 +73,7 @@
   @include font(null, 12px, null, null);
   font-size: 12px;
 }
+
 .input-wrapper {
   position: relative;
   margin-bottom: 10px;
@@ -116,7 +129,7 @@
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  @include font(400, 12px, 14px, 0.01em);
+  @include font(400, 12px, 12px, 0.01em);
   resize: none;
   &:hover,
   &:focus {
@@ -148,8 +161,10 @@
 	}
 
 .lable-text {
+
   @include flex(flex, center, center);
   margin-bottom: 30px;
+  font-size: 12px;
 }
 
 .lable-text span {
@@ -173,7 +188,7 @@
 
 .input-link {
   margin-left: 4px;
-  @include font(400, 14px, 1.7142, null);
+  @include font(400, 12px, 1.7142, null);
   color: var(--accent-color);
   position: relative;
   &::before {
@@ -188,7 +203,6 @@
     bottom: 6px;
   }
 }
-
 
 .btn-input {
   width: 200px;
@@ -205,12 +219,14 @@
   &:hover,
   &:focus {
   background-color: var(--background-active-button);
- }
+  }
 }
+
 .modal-checkbox {
   margin-bottom: 30px;
   @include flex(null, center, center);
 }
+
 .lable-checkbox {
   @include font(400, 14px, 24px, null);
   color: var(--primary-text-color);
